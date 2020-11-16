@@ -1,0 +1,33 @@
+{
+  "name": "tachyon-contentful-reader",
+  "version": "0.1.0",
+  "description": "Converts a Contentful export file into individual objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TachyonCMS/tachyon-contentful-reader.git"
+  },
+  "keywords": [
+    "contentful",
+    "aws",
+    "dynamodb",
+    "cms",
+    "import",
+    "export",
+    "tachyon-cms"
+  ],
+  "author": "Brian Winkers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TachyonCMS/tachyon-contentful-reader/issues"
+  },
+  "homepage": "https://github.com/TachyonCMS/tachyon-contentful-reader#readme",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "oboe": "^2.1.5",
+    "yargs": "^16.1.0"
+  }
+}
