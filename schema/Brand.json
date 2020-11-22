@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "title": "Brand",
+  "description": null,
+  "displayField": "companyName",
+  "properties": {
+    "companyName": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "logo": {
+      "$ref": "#/definitions/Asset.json"
+    },
+    "companyDescription": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "website": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "twitter": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "email": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "phone": {
+      "description": null,
+      "type": "array",
+      "sourceType": "Array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "companyName"
+  ]
+}

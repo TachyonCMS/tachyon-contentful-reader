@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "title": "Category",
+  "description": null,
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "icon": {
+      "$ref": "#/definitions/Asset.json"
+    },
+    "categoryDescription": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "datetime": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Date"
+    },
+    "myMyMedia": {
+      "description": null,
+      "type": "array",
+      "sourceType": "Array",
+      "items": {
+        "$ref": "#/definitions/Asset.json"
+      }
+    },
+    "booBooBoolean": {
+      "description": null,
+      "type": "boolean",
+      "sourceType": "Boolean"
+    },
+    "jsonnNy": {
+      "description": null,
+      "type": "object",
+      "sourceType": "Object",
+      "anyOf": [
+        "#/definitions/JSONNNy.json"
+      ]
+    },
+    "refertothis": {
+      "$ref": "#/definitions/Entry.json"
+    }
+  },
+  "required": [
+    "title",
+    "datetime"
+  ]
+}

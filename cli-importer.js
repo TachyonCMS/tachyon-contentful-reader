@@ -24,10 +24,18 @@ const argv = yargs
         required: true,
         default: 'console'
     })
+    .option('schemaDir', {
+        alias: 's',
+        description: 'The directory to output the schema files.',
+        type: 'string',
+        required: false
+    })
     .help()
     .alias('help', 'h')
     .argv
 
 var source = fs.createReadStream(argv.file)
 
-Streamer.contentful(source, argv.output)
+console.log(argv)
+
+Streamer.contentful(source, argv.output, argv.space, argv.account, argv.schemaDir)

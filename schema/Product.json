@@ -1,0 +1,96 @@
+{
+  "type": "object",
+  "title": "Product",
+  "description": null,
+  "displayField": "productName",
+  "properties": {
+    "productName": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "slug": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "productDescription": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "sizetypecolor": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "image": {
+      "description": null,
+      "type": "array",
+      "sourceType": "Array",
+      "items": {
+        "$ref": "#/definitions/Asset.json"
+      }
+    },
+    "tags": {
+      "description": null,
+      "type": "array",
+      "sourceType": "Array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "categories": {
+      "description": null,
+      "type": "array",
+      "sourceType": "Array",
+      "items": {
+        "$ref": {
+          "anyOf": [
+            "#/definitions/category.json"
+          ]
+        }
+      }
+    },
+    "price": {
+      "description": null,
+      "type": "number",
+      "sourceType": "Number"
+    },
+    "brand": {
+      "$ref": "#/definitions/Entry.json"
+    },
+    "quantity": {
+      "description": null,
+      "type": "number",
+      "sourceType": "Integer"
+    },
+    "sku": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "website": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "bLobbity": {
+      "description": null,
+      "type": "string",
+      "sourceType": "RichText"
+    },
+    "place": {
+      "description": null,
+      "type": "object",
+      "sourceType": "Location",
+      "anyOf": [
+        "#/definitions/place.json"
+      ]
+    }
+  },
+  "required": [
+    "productName",
+    "bLobbity"
+  ]
+}
