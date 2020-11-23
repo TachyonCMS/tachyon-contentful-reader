@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "title": "Layout",
+  "description": "A page consisting of freely configurable and rearrangeable content modules.",
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "slug": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "contentModules": {
+      "description": null,
+      "type": "array",
+      "sourceType": "Array",
+      "items": {
+        "$ref": {
+          "anyOf": [
+            "#/definitions/layoutCopy.json",
+            "#/definitions/layoutHeroImage.json",
+            "#/definitions/layoutHighlightedCourse.json"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "title",
+    "slug",
+    "contentModules"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "title": "Layout > Highlighted Course",
+  "description": "A curated selection of highlighted courses.",
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "course": {
+      "$ref": "#/definitions/[object Object].json"
+    }
+  },
+  "required": [
+    "title",
+    "course"
+  ]
+}

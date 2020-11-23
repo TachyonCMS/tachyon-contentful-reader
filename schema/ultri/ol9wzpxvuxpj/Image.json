@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "title": "Image",
+  "description": null,
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "photo": {
+      "$ref": "#/definitions/Asset.json"
+    },
+    "imageCaption": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "imageCredits": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

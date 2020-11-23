@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "title": "Blog Post",
+  "description": null,
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "slug": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "heroImage": {
+      "$ref": "#/definitions/Asset.json"
+    },
+    "description": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "body": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "author": {
+      "$ref": "#/definitions/Entry.json"
+    },
+    "publishDate": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Date"
+    },
+    "tags": {
+      "description": null,
+      "type": "array",
+      "sourceType": "Array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "title",
+    "slug",
+    "heroImage",
+    "description",
+    "body",
+    "publishDate"
+  ]
+}

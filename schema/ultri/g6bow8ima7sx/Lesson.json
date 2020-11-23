@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "title": "Lesson",
+  "description": "A educational lesson, representing one section of a course.",
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "slug": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "modules": {
+      "description": null,
+      "type": "array",
+      "sourceType": "Array",
+      "items": {
+        "$ref": {
+          "anyOf": [
+            "#/definitions/lessonCodeSnippets.json",
+            "#/definitions/lessonCopy.json",
+            "#/definitions/lessonImage.json"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "title",
+    "slug",
+    "modules"
+  ]
+}

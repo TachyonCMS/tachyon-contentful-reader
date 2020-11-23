@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "title": "Layout > Copy",
+  "description": "A block of text with a headline and a call to action to be shown on the landing page.",
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "headline": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "copy": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "ctaTitle": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "ctaLink": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "visualStyle": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

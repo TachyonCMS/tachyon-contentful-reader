@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "title": "Lesson > Code Snippets",
+  "description": "A code snippet module supporting all platforms to be used in a lesson.",
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "curl": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "dotNet": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "javascript": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "java": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "javaAndroid": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "php": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "python": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "ruby": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "swift": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

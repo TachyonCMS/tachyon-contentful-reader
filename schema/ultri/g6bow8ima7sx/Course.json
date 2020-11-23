@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "title": "Course",
+  "description": "A series of lessons designed to teach sets of concepts that enable students to master Contentful.",
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "slug": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "image": {
+      "$ref": "#/definitions/Asset.json"
+    },
+    "shortDescription": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "description": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "duration": {
+      "description": null,
+      "type": "number",
+      "sourceType": "Integer"
+    },
+    "skillLevel": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "lessons": {
+      "description": null,
+      "type": "array",
+      "sourceType": "Array",
+      "items": {
+        "$ref": {
+          "anyOf": [
+            "#/definitions/lesson.json"
+          ]
+        }
+      }
+    },
+    "categories": {
+      "description": null,
+      "type": "array",
+      "sourceType": "Array",
+      "items": {
+        "$ref": {
+          "anyOf": [
+            "#/definitions/category.json"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "title",
+    "slug",
+    "image",
+    "shortDescription",
+    "description",
+    "skillLevel",
+    "lessons",
+    "categories"
+  ]
+}

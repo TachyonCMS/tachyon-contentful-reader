@@ -74,23 +74,9 @@
       "description": null,
       "type": "string",
       "sourceType": "Symbol"
-    },
-    "bLobbity": {
-      "description": null,
-      "type": "string",
-      "sourceType": "RichText"
-    },
-    "place": {
-      "description": null,
-      "type": "object",
-      "sourceType": "Location",
-      "anyOf": [
-        "#/definitions/place.json"
-      ]
     }
   },
   "required": [
-    "productName",
-    "bLobbity"
+    "productName"
   ]
 }

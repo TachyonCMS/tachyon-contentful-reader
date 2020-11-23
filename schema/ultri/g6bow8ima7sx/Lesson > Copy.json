@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "title": "Lesson > Copy",
+  "description": "A markdown module to be used in a lesson.",
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "copy": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    }
+  },
+  "required": [
+    "title",
+    "copy"
+  ]
+}

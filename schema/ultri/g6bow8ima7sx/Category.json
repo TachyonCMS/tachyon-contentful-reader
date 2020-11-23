@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "title": "Category",
+  "description": "Categories can be applied to Courses and Lessons. Assigning Multiple categories is also possible.",
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "slug": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    }
+  },
+  "required": [
+    "title",
+    "slug"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "title": "Category",
+  "description": null,
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    },
+    "icon": {
+      "$ref": "#/definitions/Asset.json"
+    },
+    "categoryDescription": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Text"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

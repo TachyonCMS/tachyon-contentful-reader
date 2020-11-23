@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "title": "Lesson > Image",
+  "description": "An image to be used as a module in a lesson.",
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "image": {
+      "$ref": "#/definitions/Asset.json"
+    },
+    "caption": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    }
+  },
+  "required": [
+    "title",
+    "image"
+  ]
+}

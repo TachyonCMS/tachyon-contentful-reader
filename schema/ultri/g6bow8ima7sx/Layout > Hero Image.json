@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "title": "Layout > Hero Image",
+  "description": "A hero image and header text.",
+  "displayField": "title",
+  "properties": {
+    "title": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "headline": {
+      "description": null,
+      "type": "string",
+      "sourceType": "Symbol"
+    },
+    "backgroundImage": {
+      "$ref": "#/definitions/Asset.json"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
