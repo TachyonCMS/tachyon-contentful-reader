@@ -36,6 +36,6 @@ const argv = yargs
 
 var source = fs.createReadStream(argv.file)
 
-console.log(argv)
+//console.log(argv)
 
 Streamer.contentful(source, argv.output, argv.space, argv.account, argv.schemaDir)
